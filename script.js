@@ -1,4 +1,3 @@
-// Declare a variável img fora das funções para que ela seja acessível em ambos os lugares
 const img = document.createElement('img');
 img.setAttribute('id', 'foto');
 
@@ -21,7 +20,7 @@ function verificar() {
         genero = 'Mulher';        
     }
     
-    verificarIdade(idade, genero); // Chame a função verificarIdade() passando a idade e o gênero
+    verificarIdade(idade, genero); 
     resultado.style.textAlign = 'center';
     resultado.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
     resultado.appendChild(img);
